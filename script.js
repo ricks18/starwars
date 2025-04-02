@@ -182,6 +182,15 @@ const imagensPlanetas = {
     'Naboo': 'https://lumiere-a.akamaihd.net/v1/images/naboo-main_60654020.jpeg'
 };
 
+const imagensFilmes = {
+    'A New Hope': 'https://architecture.mit.edu/sites/default/files/styles/large/public/event-images/star-wars-banner.jpg?itok=h0IyfDTn',
+    'The Empire Strikes Back': 'https://m.media-amazon.com/images/M/MV5BY2ViMjFhMDMtNTA4Yi00NGJjLTk0ZTktNGVkZjJjMGY4ZTFkXkEyXkFqcGc@._V1_.jpg',
+    'Return of the Jedi': 'https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Return-Jedi-VI-Poster_a10501d2.jpeg',
+    'The Phantom Menace': 'https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Phantom-Menace-I-Poster_3c1ff9eb.jpeg',
+    'Attack of the Clones': 'https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Attack-Clones-II-Poster_53baa2e7.jpeg',
+    'Revenge of the Sith': 'https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Revenge-Sith-III-Poster_646108ce.jpeg'
+};
+
 const traducoesCores = {
     'blue': 'azul',
     'brown': 'marrom',
@@ -219,6 +228,8 @@ function obterImagem(nome, tipo) {
             return imagensNaves[nome] || 'https://lumiere-a.akamaihd.net/v1/images/sw-placeholder-image_0_1_95807c25.jpeg';
         case 'planetas':
             return imagensPlanetas[nome] || 'https://lumiere-a.akamaihd.net/v1/images/sw-placeholder-image_0_1_95807c25.jpeg';
+        case 'filmes':
+            return imagensFilmes[nome] || 'https://lumiere-a.akamaihd.net/v1/images/sw-placeholder-image_0_1_95807c25.jpeg';
         default:
             return 'https://lumiere-a.akamaihd.net/v1/images/sw-placeholder-image_0_1_95807c25.jpeg';
     }
@@ -529,38 +540,7 @@ window.addEventListener('click', (e) => {
     }
 });
 
-// Controle do Sabre de Luz e Lado da Força
-const initializeLightsaber = () => {
-    const forceSideSwitch = document.getElementById('forceSideSwitch');
-    const blade = document.querySelector('.blade');
-    const body = document.body;
 
-    // Ativar o sabre de luz imediatamente
-    blade.classList.add('active');
-
-    // Mudar o lado da força
-    forceSideSwitch.addEventListener('change', () => {
-        if (forceSideSwitch.checked) {
-            // Lado Sombrio
-            blade.classList.add('dark-side');
-            body.style.setProperty('--primary-color', '#ff3333');
-        } else {
-            // Lado da Luz
-            blade.classList.remove('dark-side');
-            body.style.setProperty('--primary-color', '#FFE81F');
-        }
-    });
-
-    // Efeito de hover no sabre
-    const lightsaber = document.querySelector('.lightsaber');
-    lightsaber.addEventListener('mouseenter', () => {
-        blade.style.transform = 'rotate(-5deg)';
-    });
-
-    lightsaber.addEventListener('mouseleave', () => {
-        blade.style.transform = 'rotate(0deg)';
-    });
-};
 
 // Garantir que o código só execute após o DOM estar completamente carregado
 if (document.readyState === 'loading') {
