@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Star Wars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <nav class="menu">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/sw_logo_stacked_2x-52b4f6d33087_7ef430af.png" alt="Star Wars Logo" width="100">
+            </div>
+            <div class="menu-items">
+                <button class="nav-btn active" data-section="personagens">
+                    <i class="fas fa-user"></i>
+                    <span>Personagens</span>
+                </button>
+                <button class="nav-btn" data-section="planetas">
+                    <i class="fas fa-globe"></i>
+                    <span>Planetas</span>
+                </button>
+                <button class="nav-btn" data-section="naves">
+                    <i class="fas fa-space-shuttle"></i>
+                    <span>Naves</span>
+                </button>
+                <button class="nav-btn" data-section="filmes">
+                    <i class="fas fa-film"></i>
+                    <span>Filmes</span>
+                </button>
+                <button class="nav-btn" data-section="ordem-cronologica">
+                    <i class="fas fa-clock"></i>
+                    <span>Ordem Cronológica</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Bem-vindo ao Universo Star Wars</h1>
+                <p>Explore uma galáxia muito, muito distante...</p>
+                <div class="search-container">
+                    <input type="text" id="busca" placeholder="Pesquisar na galáxia...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="historia" class="historia-section">
+            <div class="historia-content">
+                <h1 class="sw-title">Bem-vindo ao Universo de Star Wars: A Jornada Começa Aqui!</h1>
+                
+                <p class="intro-text">Prepare-se para embarcar em uma das aventuras mais épicas de todos os tempos! Em <strong>Star Wars</strong>, a luta entre o bem e o mal transcende gerações, conectando heróis e vilões em uma batalha pela galáxia. A icônica saga criada por George Lucas transporta você a uma galáxia distante, onde as forças da Luz e da Escuridão estão em constante conflito.</p>
+
+                <h2 class="sw-title">A História de Star Wars: Um Conflito Épico</h2>
+                <p>Em uma galáxia espalhada por milhões de sistemas estelares, as forças da liberdade e da tirania estão em guerra. A história de <strong>Star Wars</strong> se inicia com o surgimento de <strong>Anakin Skywalker</strong>, um jovem com um destino extraordinário, cuja jornada passará por momentos de grande glória e tragédia.</p>
+                <p><strong>Os Jedi</strong>, guardiões da paz, e <strong>os Sith</strong>, seres que buscam o poder absoluto, travam uma batalha de séculos. A galáxia já foi dominada pelo mal do <strong>Império Galáctico</strong>, liderado pelo temido <strong>Darth Vader</strong>, mas um grupo de heróis, como <strong>Luke Skywalker</strong>, <strong>Leia Organa</strong>, e <strong>Han Solo</strong>, se levanta para lutar contra a tirania e restaurar a liberdade.</p>
+
+                <h2 class="sw-title">Como Funciona o Mundo de Star Wars?</h2>
+                <div class="mundo-info">
+                    <div class="info-card">
+                        <h3>Jedi e Sith</h3>
+                        <p>Os Jedi são guerreiros místicos que buscam a paz e o equilíbrio, usando a Força para proteger os inocentes. Já os Sith são seus inimigos, movidos pela ambição e pelo desejo de poder absoluto.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>A Frota Rebelde e o Império</h3>
+                        <p>O Império Galáctico, liderado pelo imperador <strong>Palpatine</strong> e Darth Vader, busca conquistar toda a galáxia. A <strong>Aliança Rebelde</strong> luta pela liberdade.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Tecnologia Avançada</h3>
+                        <p>A galáxia é cheia de naves espaciais, droides e armas avançadas. A <strong>Millennium Falcon</strong> e personagens como <strong>R2-D2</strong> são ícones dessa tecnologia.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Os Planetas</h3>
+                        <p>De <strong>Tatooine</strong> a <strong>Coruscant</strong>, cada planeta possui sua própria cultura e mistérios, formando o rico universo de Star Wars.</p>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h2 class="sw-title">Participe dessa Aventura!</h2>
+                    <p>A jornada está apenas começando... Que a Força esteja com você!</p>
+                    <button class="explore-btn">Explorar o Universo <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="conteudo-principal" class="content-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h2 class="section-title">Personagens</h2>
+            </div>
+            
+            <div class="loading-animation">
+                <div class="lightsaber">
+                    <div class="hilt"></div>
+                    <div class="blade"></div>
+                </div>
+                <p>Carregando...</p>
+            </div>
+            <div class="cards-grid"></div>
+            <div class="paginacao">
+                <button id="pagina-anterior" class="pagina-btn" disabled>
+                    <i class="fas fa-chevron-left"></i> Anterior
+                </button>
+                <span id="info-pagina">Página 1 de 1</span>
+                <button id="proxima-pagina" class="pagina-btn">
+                    Próxima <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="ordem-cronologica" class="ordem-section">
+            <div class="ordem-content">
+                <h2>Como Assistir Star Wars: Ordem Cronológica</h2>
+                <p class="ordem-intro">Embarque nesta jornada épica na ordem correta dos acontecimentos na galáxia muito, muito distante, incluindo todos os filmes da saga principal e histórias paralelas...</p>
+                
+                <div class="filmes-timeline">
+                    <div class="filme-card">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Phantom-Menace-I-Poster_3c1ff9eb.jpeg" alt="Episódio I">
+                        <div class="filme-info">
+                            <h3>Episódio I: A Ameaça Fantasma</h3>
+                            <p>32 BBY (Anos Antes da Batalha de Yavin)</p>
+                            <p>A jornada começa com o jovem Anakin Skywalker sendo descoberto em Tatooine.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Attack-Clones-II-Poster_53baa2e7.jpeg" alt="Episódio II">
+                        <div class="filme-info">
+                            <h3>Episódio II: Ataque dos Clones</h3>
+                            <p>22 BBY</p>
+                            <p>A República está em crise, e Anakin começa sua jornada ao lado de Padmé.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOTdiODQ1MDYtZjM5My00MmQ5LTk1ZWUtZWIwYjBhZGMxZDAyXkEyXkFqcGc@._V1_.jpg" alt="The Clone Wars">
+                        <div class="filme-info">
+                            <h3>Star Wars: The Clone Wars</h3>
+                            <p>22-19 BBY</p>
+                            <p>O filme animado que deu origem à série, mostrando as Guerras Clônicas em seu auge.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Revenge-Sith-III-Poster_646108ce.jpeg" alt="Episódio III">
+                        <div class="filme-info">
+                            <h3>Episódio III: A Vingança dos Sith</h3>
+                            <p>19 BBY</p>
+                            <p>A queda de Anakin para o lado sombrio e o nascimento de Darth Vader.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/image_517b1d6c.jpeg?region=0,0,540,810" alt="Solo">
+                        <div class="filme-info">
+                            <h3>Solo: Uma História Star Wars</h3>
+                            <p>13-10 BBY</p>
+                            <p>A origem de Han Solo, mostrando como ele se tornou o contrabandista mais famoso da galáxia.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_.jpg" alt="Rogue One">
+                        <div class="filme-info">
+                            <h3>Rogue One: Uma História Star Wars</h3>
+                            <p>0 BBY</p>
+                            <p>A missão para roubar os planos da Estrela da Morte, ligando diretamente ao Episódio IV.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/Star-Wars-New-Hope-IV-Poster_c217085b.jpeg" alt="Episódio IV">
+                        <div class="filme-info">
+                            <h3>Episódio IV: Uma Nova Esperança</h3>
+                            <p>0 BBY/ABY</p>
+                            <p>Luke Skywalker inicia sua jornada para se tornar um Jedi.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BY2ViMjFhMDMtNTA4Yi00NGJjLTk0ZTktNGVkZjJjMGY4ZTFkXkEyXkFqcGc@._V1_.jpg" alt="Episódio V">
+                        <div class="filme-info">
+                            <h3>Episódio V: O Império Contra-Ataca</h3>
+                            <p>3 ABY</p>
+                            <p>Uma das maiores revelações do cinema em uma batalha épica.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Return-Jedi-VI-Poster_a10501d2.jpeg" alt="Episódio VI">
+                        <div class="filme-info">
+                            <h3>Episódio VI: O Retorno de Jedi</h3>
+                            <p>4 ABY</p>
+                            <p>A conclusão épica da saga Skywalker original.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://br.web.img3.acsta.net/pictures/15/10/18/18/39/408904.jpg" alt="Episódio VII">
+                        <div class="filme-info">
+                            <h3>Episódio VII: O Despertar da Força</h3>
+                            <p>34 ABY</p>
+                            <p>Uma nova geração de heróis surge para enfrentar a Primeira Ordem.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/the-last-jedi-theatrical-poster-film-page_bca06283.jpeg" alt="Episódio VIII">
+                        <div class="filme-info">
+                            <h3>Episódio VIII: Os Últimos Jedi</h3>
+                            <p>34 ABY</p>
+                            <p>Rey começa seu treinamento Jedi com Luke Skywalker.</p>
+                        </div>
+                    </div>
+
+                    <div class="filme-card">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/star-wars-the-rise-of-skywalker-theatrical-poster-1000_ebc74357.jpeg" alt="Episódio IX">
+                        <div class="filme-info">
+                            <h3>Episódio IX: A Ascensão Skywalker</h3>
+                            <p>35 ABY</p>
+                            <p>A conclusão da saga Skywalker, unindo passado e presente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Henrique Rezende - Site com API Star Wars</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/henrique.rcz" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
